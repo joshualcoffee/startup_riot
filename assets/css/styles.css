@@ -37,6 +37,8 @@ header{
 	position: fixed !important;
 	top: 0px;
 	z-index: 3;
+	left: 50%;
+	margin-left: -470px !important;
 }
 header .ball{
 	width: 947px;
