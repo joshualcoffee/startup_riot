@@ -6,6 +6,7 @@
 =================================*/
 body{
 	height: 3000px;
+	font-family: helvetica, sans-serif;
 }
 #ball{
   background: url('../images/ball.png');
@@ -21,7 +22,7 @@ body{
 @buttons
 ==================================*/
 .btn{
-	font-family: helvetica, sans-serif;
+	
 	display: inline-block;
 	color: #ffffff;
 	text-decoration: none;
@@ -29,6 +30,59 @@ body{
 .btn.orange{
 	background: #f7961e;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+/*=======================
+@section titles
+==================================*/
+.section_title{
+	font-size: 24px;
+	font-weight: bold;
+	padding: 15px;
+	color: #ffffff;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	float: left;
+	display: inline-block;
+	margin: 0 0 1px 0;
+}
+.section_sub_title{
+	font-size: 18px;
+	font-family: Georgia, serif;
+	padding: 15px;
+	color: #ffffff;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+	letter-spacing: 1px;
+	clear: both;
+	display: inline-block;
+	float: left;
+	font-style: italic;
+	font-weight: normal;
+}
+.blue{
+	background: #007fc7;
+}
+.light-blue{
+	background: #00a4e6;
+}
+.green{
+	background: #39a441;
+}
+.light-green{
+	background: #6ebe44;
+}
+.pink{
+	background: #cd128c;
+}
+.light-pink{
+	background: #f06ba8;
+}
+.orange{
+	background: #f7961e;
+}
+.light-orange{
+	background: #ffb75f;
 }
 /*=======================
 @header
@@ -104,19 +158,33 @@ header h2{
 	position: relative;
 	z-index: 2;
 	margin-top: 215px;
+	margin-bottom: 40px ;
 }
 
 #main article{
 	padding: 0 0 80px 0;
+	margin: 0 0 80px 0;
 	border-bottom: 1px solid #ededed;
 	overflow: hidden;
 }
 
-#main article p{
+#main article p, footer p{
 	color: #7f7f7f;
-	font-family: helvetica, sans-serif;
+	
 	font-size: 14px;
 	line-height: 25px;
+}
+
+#main article .info{
+	margin: 40px 0 0 0;
+	width: 100%;
+}
+
+#main article .info h4{
+	font-size: 20px;
+	font-weight: normal;
+	color: #4f4e4e;
+	margin: 0 0 30px 0;
 }
 
 #main .pop img{
@@ -125,7 +193,7 @@ header h2{
 }
 
 #main .pop h2{
-	font-family: helvetica, sans-serif;
+	
 	font-size: 24px;
 	color: #4f4e4e;
 	float: left;
@@ -155,4 +223,135 @@ header h2{
 	padding: 20px 50px;
 	text-transform: uppercase;
 	margin-left: 55px;
+}
+
+/*---------
+@speakers
+-------------------*/
+#main .speakers{
+	overflow: hidden;
+	padding: 0 ;
+	margin: 0;
+	border-bottom: 0px;
+	overflow: hidden;
+}
+.speakers ul li{
+	overflow: hidden;
+	padding: 0 0 40px 0;
+	margin: 0 0 40px 0;
+	border-bottom: 1px solid #ededed;
+	list-style: none;
+}
+.speakers ul li:last-child{
+	padding: 0 0 80px 0;
+	margin: 0 0 80px 0;
+}
+img.speaker{
+	float: left;
+	margin: 0 38px 0 0 ;
+}
+
+/*---------
+@agenda
+-------------------*/
+.agenda ul{
+	margin: 30px 0 0 0 ;
+}
+.agenda .time{
+	font-weight: bold;
+	display: inline-block;
+	width: 80px;
+}
+.agenda .break{
+	background: #f7f7f7;
+	display: block;
+	padding: 10px 0 10px 80px;
+	font-weight: lighter;
+	font-style: italic;
+}
+
+/*---------
+@sponsors
+-------------------*/
+#main .sponsors .info h4{
+	font-weight: lighter;
+	font-size: 20px;
+}
+
+.sponsors{
+	overflow: hidden;
+}
+
+.sponsors ul li{
+	border-bottom: 1px solid #ededed;
+	margin: 0 0 40px 0;
+}
+.sponsors ul li:last-child{
+  border-bottom: 0px;
+  margin: 0px;
+}
+
+/*---------
+@prizes
+-------------------*/
+#main .prizes{
+	overflow: visible;
+	margin: 0 0 40px 0;
+}
+.prizes #prize_ticker{
+	background: #f7f7f7;
+	padding: 10px;
+	font-weight: bold;
+	margin: 23px 0 20px 0;
+	position: relative;
+}
+
+.prizes #prize_ticker .left_arrow{
+	width: 46px;
+	height: 46px;
+	background: url('../images/left_prize_arrow.png') no-repeat;
+	display: block;
+	position: absolute;
+	left: -61px;
+	top: -2px;
+}
+
+.prizes #prize_ticker .right_arrow{
+	width: 46px;
+	height: 46px;
+	background: url('../images/right_prize_arrow.png') no-repeat;
+	display: block;
+	position: absolute;
+	right: -61px;
+	top: -2px;
+}
+.prizes p{
+	margin: 0 0 10px 0;
+}
+.prizes p a{
+	color: #f7961e;
+	text-decoration: underline;
+}
+
+/*---------
+@footer
+-------------------*/
+footer{
+	padding: 0 0 80px 0;
+}
+footer p{
+	font-size: 11px;
+	line-height: 20px;
+	display: inline;
+	float: left;
+}
+
+footer #footer_nav{
+	float: right;
+	list-style: none;
+}
+
+footer #footer_nav li{
+	float: left;
+	margin-left: 30px;
 }
